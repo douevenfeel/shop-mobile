@@ -18,11 +18,9 @@ export default function ShopScreen({ navigation }) {
 
     return (
         <ScrollView>
-            <View>
-                <View style={styles.page}>
-                    {!!devices &&
-                        devices.map((device) => <DeviceCard key={device.id} {...device} navigation={navigation} />)}
-                </View>
+            <View style={styles.page}>
+                {!!devices &&
+                    devices.map((device) => <DeviceCard key={device.id} {...device} navigation={navigation} />)}
             </View>
         </ScrollView>
     );
